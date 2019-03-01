@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <table class="table table-striped table-hover table-bordered table-sm">
+    <thead class="thead-dark">
+      <tr>
+        <th>Customer ID</th>
+        <th>Company</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Fax</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Postal Code</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody class="small">
+      <tr ng-repeat="contact in contacts | orderBy:'CustomerID'">
+        <td>{{ contact.CustomerID }}</td>
+        <td>{{ contact.CompanyName }}</td>
+        <td>{{ contact.ContactName }}</td>
+        <td>{{ contact.ContactTitle }}</td>
+        <td>{{ contact.Email }}</td>
+        <td>{{ contact.Phone }}</td>
+        <td>{{ contact.Fax }}</td>
+        <td>{{ contact.Address }}</td>
+        <td>{{ contact.City }}</td>
+        <td>{{ contact.PostalCode }}</td>
+        <td>{{ contact.Country }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
