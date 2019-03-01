@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <table class="table table-striped table-hover table-bordered table-sm">
-    <thead class="thead-dark">
-      <tr>
+    <thead>
+      <tr class="tableHeader">
         <th>Customer ID</th>
         <th>Company</th>
         <th>Name</th>
@@ -16,18 +16,18 @@
       </tr>
     </thead>
     <tbody class="small">
-      <tr ng-repeat="contact in contacts | orderBy:'CustomerID'">
-        <td>{{ contact.CustomerID }}</td>
-        <td>{{ contact.CompanyName }}</td>
-        <td>{{ contact.ContactName }}</td>
-        <td>{{ contact.ContactTitle }}</td>
-        <td>{{ contact.Email }}</td>
-        <td>{{ contact.Phone }}</td>
-        <td>{{ contact.Fax }}</td>
-        <td>{{ contact.Address }}</td>
-        <td>{{ contact.City }}</td>
-        <td>{{ contact.PostalCode }}</td>
-        <td>{{ contact.Country }}</td>
+      <tr ng-repeat="contact in contacts | orderBy:'CustomerID'" class="tableBody">
+        <td>{{ contact.CustomerID["#text"] }}</td>
+        <td>{{ contact.CompanyName["#text"] }}</td>
+        <td>{{ contact.ContactName["#text"] }}</td>
+        <td>{{ contact.ContactTitle["#text"] }}</td>
+        <td>{{ contact.Email["#text"] }}</td>
+        <td>{{ contact.Phone["#text"] }}</td>
+        <td>{{ contact.Fax["#text"] }}</td>
+        <td>{{ contact.Address["#text"] }}</td>
+        <td>{{ contact.City["#text"] }}</td>
+        <td>{{ contact.PostalCode["#text"] }}</td>
+        <td>{{ contact.Country["#text"] }}</td>
       </tr>
     </tbody>
   </table>

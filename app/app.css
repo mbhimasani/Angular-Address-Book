@@ -23,3 +23,53 @@
   content: "|";
   padding-right: 0.3em;
 }
+
+thead {
+  background-color: #192c44;
+}
+
+tbody {
+  /* background-color: rgba(25,44,68,0.8); */
+  background-color: #2e3f58;
+}
+
+.tableHeader {
+  color: #37afc5;
+}
+
+.tableBody {
+  color: rgba(255, 255, 255, .7);
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  /* background-color: #142236; */
+  background-color: #17273e;
+}
+
+.card {
+  background-color: #192c44;
+  /* box-shadow:4px 4px 12px rgba(0, 0, 0, 0.5); */
+  transition: transform 300ms ease;
+}
+
+.card:hover {
+  transform: scale(1.025);
+}
+
+.card-header {
+  color: #37afc5;
+}
+
+.card-title {
+  color: rgba(255, 255, 255, .8);
+}
+
+.card-subtitle {
+  color: rgba(255, 255, 255, .8);
+}
+.card-text {
+  color: rgba(255, 255, 255, .8);
+}
+body {
+  background-color: #2e3f58;
+}
