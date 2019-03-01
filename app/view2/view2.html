@@ -6,7 +6,9 @@
           <h5 class="card-header">{{ contact.CustomerID["#text"] }} {{ contact.CompanyName["#text"] }}</h5>
           <div class="card-body">
             <h5 class="card-title">{{ contact.ContactName["#text"] }} {{ contact.ContactTitle["#text"] }}</h5>
-            <h6 class="card-subtitle mb-2">{{ contact.Email["#text"] }} {{ contact.Phone["#text"] }} {{ contact.Fax["#text"] }}</h6>
+            <h6 class="card-subtitle mb-2">Email: {{ contact.Email["#text"] }}</h6>
+            <h6 class="card-subtitle mb-2">Phone: {{ contact.Phone["#text"] }}</h6>
+            <h6 class="card-subtitle mb-2">Fax: {{ contact.Fax["#text"] }}</h6>
             <p class="card-text">{{ contact.Address["#text"] }} {{ contact.City["#text"] }} {{ contact.PostalCode["#text"] }} {{ contact.Country["#text"] }}</p>
           </div>
         </div>
